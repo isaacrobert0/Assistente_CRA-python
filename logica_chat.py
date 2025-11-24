@@ -1,12 +1,12 @@
 import os
 from openai import OpenAI
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI( )
 
 def responder(pergunta):
     resposta = client.responses.create(
         model="gpt-4o-mini",
-        messages=[
+        input=[
             {"role": "system", "content": "Você é um assistente do CRA UNINASSAU João Pessoa."},
             {"role": "user", "content": pergunta}
         ]

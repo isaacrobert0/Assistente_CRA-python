@@ -4,7 +4,7 @@ from logica_chat import responder
 st.set_page_config(page_title="ASSISTENTE VIRTUAL CRA UNINASSAU", layout="centered")
 
 avatar_uninassau = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu-WxeGPMERFd0TGfOBYXt5RtHi4nbT4F_bw&s"
-avatar_user = "imagens/user.png"
+avatar_user = "https://cdn-icons-png.flaticon.com/512/7236/7236095.png"
 
 if "logado" not in st.session_state:
     st.session_state["logado"] = False
