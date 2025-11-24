@@ -111,40 +111,112 @@ Pode incluir:
 ## Tipos
 
 -   Obrigatório,
--   Não obrigatório
-
+-   Não obrigatório,
 
 ## Documentos
 
-### Obrigatório PF
+## Estágios - Pessoa Física (PF)
 
--   RG , CPF,
--   Telefones para contato,
--   Endereço,
--   Nome e cargo do representante da unidade concedente,
--   Área do estágio
-
+##  Obrigatório PF
+- RG, CPF,
+- Telefones para contato,
+- Endereço completo,
+- Nome e cargo do representante da unidade concedente,
+- Área do estágio
 ### Instituição de ensino
-
--   Representante: Erica Pacheco
--   Cargo Representante: Reitoria
-
+- Representante: Erica Pacheco
+- Cargo Representante: Reitoria
 ### Seguro
-
--   Numero 
--   Seguradora
-
+- Numero,
+- Seguradora
 ### Caracterização do estágio
+- Horário de início,
+- Horário de término,
+- Data de início da vigência do estágio,
+- Data de fim da vigência do estágio,
+- Carga horaria semana,
+- E-mail do orientador,
+- Nome do orientador do estágio,
+- Cargo do orientador do estágio,
+- Descrição de Atividades
 
--   Horário de início,
--   Horário de término,
--   Data de início da vigência do estágio,
--   Data de fim da vigência do estágio,
--   Carga horaria semana,
--   E-mail do orientador,
--   Nome do orientador do estágio,
--   Cargo do orientador do estágio,
--   Descrição de Atividades
+
+### NAO Obrigatório PF
+- RG, CPF,
+- Telefones para contato,
+- Endereço completo,
+- Nome e cargo do representante da unidade concedente,
+- Área do estágio
+### Instituição de ensino
+- Representante: Adriano Lisboa
+- Cargo Representante: Reitor
+### Seguro
+- Numero,
+- Seguradora,
+- Valor da cobertura
+### Caracterização do estágio
+- Horário de início,
+- Horário de término,
+- Data de início da vigência do estágio,
+- Data de fim da vigência do estágio,
+- Carga horaria semana,
+- E-mail do orientador,
+- Nome do orientador do estágio,
+- Cargo do orientador do estágio,
+- Bolsa auxilio,
+- Beneficios,
+- Descrição de Atividades
+--------------------------------------------------------------------------
+# Estágios - Pessoa Jurídica (PJ)
+
+### Obrigatório PJ
+- Nome, CNPJ
+- Telefones para contato,
+- Endereço completo,
+- Nome e cargo do representante da unidade concedente,
+- Área do estágio
+### Instituição de ensino
+- Representante: Erica Pacheco
+- Cargo Representante: Reitoria
+### Seguro
+- Numero,
+- Seguradora
+### Caracterização do estágio
+- Horário de início,
+- Horário de término,
+- Data de início da vigência do estágio,
+- Data de fim da vigência do estágio,
+- Carga horaria semana,
+- E-mail do orientador,
+- Nome do orientador do estágio,
+- Cargo do orientador do estágio,
+- Descrição de Atividades
+
+### NAO Obrigatório PJ
+- Nome, CNPJ,
+- Telefones para contato,
+- Endereço completo,
+- Nome e cargo do representante da unidade concedente,
+- Área do estágio
+### Instituição de ensino
+- Representante: Adriano Lisboa
+- Cargo Representante: Reitor
+### Seguro
+- Numero,
+- Seguradora,
+- Valor da cobertura
+### Caracterização do estágio
+- Horário de início,
+- Horário de término,
+- Data de início da vigência do estágio,
+- Data de fim da vigência do estágio,
+- Carga horaria semana,
+- E-mail do orientador,
+- Nome do orientador do estágio,
+- Cargo do orientador do estágio,
+- Bolsa auxilio,
+- Beneficios,
+- Descrição de Atividades
 
 ------------------------------------------------------------------------
 

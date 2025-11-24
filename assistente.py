@@ -29,8 +29,12 @@ if not st.session_state["logado"]:
         email = st.text_input("E-mail")
 
         if st.form_submit_button("Iniciar conversa"):
+            # Validação básica
             if not nome or not email:
                 st.error("Por favor, preencha Nome e E-mail.")
+            # Validação específica: matrícula obrigatória para alunos e professores
+            elif tipo_usuario in ["aluno", "professor"] and not matricula:
+                st.error("Por favor, preencha a Matrícula para alunos e professores.")
             else:
                 st.session_state["logado"] = True
                 st.session_state["usuario"] = {
