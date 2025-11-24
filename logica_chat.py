@@ -1,7 +1,7 @@
 import os
 from openai import OpenAI
 
-client = OpenAI( )
+client = OpenAI()
 
 def responder(pergunta):
     resposta = client.responses.create(
