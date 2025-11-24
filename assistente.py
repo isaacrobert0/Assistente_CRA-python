@@ -46,15 +46,20 @@ if st.session_state["logado"]:
     st.title("Chat Iniciado!")
     st.write(f"Conectado(a) como: **{st.session_state['usuario']['nome']}**")
 
-# Histórico
+    # Saudação inicial
+    if "primeira_vez" not in st.session_state:
+        st.session_state.primeira_vez = True
+        saudacao = "Oi! Eu sou o assistente virtual da Uninassau João Pessoa. Como posso te ajudar?"
+        st.session_state["messages"].append({"role": "assistant", "content": saudacao})
+
+    # Histórico de mensagens
     for message in st.session_state["messages"]:
         avatar_role = avatar_uninassau if message["role"] == "assistant" else avatar_user
         with st.chat_message(message["role"], avatar=avatar_role):
             st.markdown(message["content"])
 
-# Entrada do usuário
+    # Entrada do usuário
     if prompt := st.chat_input("Digite sua dúvida aqui..."):
-
         st.session_state["messages"].append({"role": "user", "content": prompt})
         with st.chat_message("user", avatar=avatar_user):
             st.markdown(prompt)

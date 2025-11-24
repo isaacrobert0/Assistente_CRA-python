@@ -14,27 +14,27 @@ def carregar_md(caminho_arquivo="uninassau_infos.md"):
 conteudo_md = carregar_md()
 
 # Lista de palavras para saudações
-saudacoes = ["oi", "olá", "ola", "bom dia", "boa tarde", "boa noite", "hey", "e aí"]
+saudacoes = ["oi", "olá", "ola", "bom dia", "boa tarde", "boa noite", "hey", "e ai"]
 
+# Função principal de resposta
 def responder(pergunta):
     pergunta_lower = pergunta.lower().strip()
 
-    # Se for uma saudação simples, responder dessa forma
+    # Saudação simples
     if pergunta_lower in saudacoes:
         return "Oi! Eu sou o assistente virtual da Uninassau João Pessoa. Como posso te ajudar?"
 
-    # Prompt restritivo para perguntas relacionadas à Uninassau
-    system_prompt = (
-    "Você é um assistente especializado em informações sobre a Uninassau João Pessoa, "
-    "incluindo matrícula, aditamentos, cursos e processos acadêmicos. "
-    "Use o conteúdo do arquivo Markdown como referência, mas você também pode usar conhecimento geral "
-    "sobre a Uninassau João Pessoa caso a informação não esteja no arquivo ou no site ofical da Uninassau. "
-    "Se a pergunta for sobre outro assunto fora da Uninassau João Pessoa, responda: "
-    "'Desculpe, só posso responder sobre a Uninassau João Pessoa!'\n\n"
-    f"Aqui está o conteúdo do arquivo Markdown:\n\n{conteudo_md}"
-)
+    # Prompt para o modelo
+    system_prompt = f"""
+Você é um assistente especializado em informações sobre a Uninassau João Pessoa.
+Responda **apenas sobre a pergunta do usuário**, usando as informações abaixo como referência:
 
+{conteudo_md}
 
+Se a pergunta não estiver relacionada à Uninassau João Pessoa, responda:
+'Desculpe, só posso responder sobre a Uninassau João Pessoa!'
+"""
+    
     resposta = client.responses.create(
         model="gpt-4o-mini",
         input=[
@@ -44,3 +44,15 @@ def responder(pergunta):
     )
 
     return resposta.output_text
+
+# Exibir saudação automática ao iniciar
+def iniciar_chat():
+    print("Oi! Eu sou o assistente virtual da Uninassau João Pessoa. Como posso te ajudar?")
+
+# Exemplo de uso no console
+if __name__ == "__main__":
+    iniciar_chat()
+    while True:
+        pergunta = input("Você: ")
+        resposta = responder(pergunta)
+        print("Assistente:", resposta)
