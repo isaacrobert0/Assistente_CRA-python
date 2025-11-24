@@ -5,7 +5,7 @@ client = OpenAI()
 
 def responder(pergunta):
 # Instrução de Sistema
-    INSTRUCAO_SISTEMA = (
+    instrucao_assistente = (
         "Você é um Assistente Virtual do CRA UNINASSAU focado exclusivamente no campus de João Pessoa PB."
         "Seu único objetivo é fornecer informações corretas sobre a faculdade (CRA, cursos, etc.)."
         "REGRA CRÍTICA: Você deve RECUSAR educadamente qualquer pergunta que não esteja relacionada à UNINASSAU João Pessoa, "
@@ -18,7 +18,7 @@ def responder(pergunta):
     resposta = client.responses.create(
         model="gpt-4o-mini",
         input=[
-            {"role": "system", "content": "Você é um assistente do CRA UNINASSAU João Pessoa."},
+            {"role": "system", "content": "instrucao_assistente"},
             {"role": "user", "content": pergunta}
         ]
     )
