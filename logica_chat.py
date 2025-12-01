@@ -1,7 +1,11 @@
 import os
 from openai import OpenAI
+from dotenv import load_dotenv
 
-client = OpenAI()
+load_dotenv()
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
 
 # Carrega o conteúdo do arquivo .md
 def carregar_md(caminho_arquivo="uninassau_infos.md"):

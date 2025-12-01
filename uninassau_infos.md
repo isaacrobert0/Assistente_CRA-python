@@ -2,7 +2,30 @@
 
 ------------------------------------------------------------------------
 
- # 1. Coordenação
+ # 1. Uninassau João Pessoa
+
+## Site: https://www.uninassau.edu.br/institucional/joao-pessoa
+
+-------------------------------------------------------------------------
+
+## Endereço: Av. Pres. Epitácio Pessoa, 1213 - Estados, João Pessoa - PB, 58039-000
+
+ -------------------------------------------------------------------------
+
+## Contato:  (83) 2107-5959
+
+ -------------------------------------------------------------------------
+
+## Horario de Funcionamento:  
+domingo	Fechado
+segunda-feira	08:00–21:00
+terça-feira	08:00–21:00
+quarta-feira	08:00–21:00
+quinta-feira	08:00–21:00
+sexta-feira	08:00–21:00
+sábado	08:00–12:00
+
+----------------------------------------------------------------------------
 
 ## Função da Coordenação
 
@@ -67,6 +90,8 @@ Pode incluir:
 
 -   Portal do Aluno
 
+# Link: https://fs-educ.sempreser.com.br/adfs/ls/
+
 ## Problemas comuns
 
 -   Disciplina não aparece,
@@ -89,15 +114,19 @@ Pode incluir:
 
 -   Presencial ou Online
 
+------------------------------------------------------------------------
+
 ## Rematrícula
 
 -   Feita no Portal do Aluno
     Inclui:
 -   Escolha das disciplinas,
 -   Ajuste de horários,
--   Plano financeiro
+-   Plano financeiro.
 
-## Problemas comuns
+---------------------------------------------------------------------------
+
+## Problemas comuns para ser tratado com CRa presencial na hora da matricula ou rematricula
 
 -   Turma lotada,
 -   Horários divergendo,
@@ -265,3 +294,47 @@ Pode incluir:
 -   Declarações\
 -   Documentos oficiais\
 -   Histórico
+
+---------------------------------------------------------------------------
+
+## Formas de Ingresso
+
+## NOS CURSO DE GRADUAÇÃO.
+
+# Vestibular Programado
+O Vestibular Programado é uma modalidade de avaliação para ingresso no ensino superior, que visa adequar o processo de seleção à disponibilidade de tempo e horário do candidato. Você poderá escolher a melhor data e hora para realização da sua prova, mas deverá dispor de pelo menos 3 horas para a realização, pois a avaliação é composta por 30 questões objetivas e uma redação.
+
+O Vestibular Programado é uma opção para candidatos que não realizaram ENEM ou que nunca iniciou nenhum outro curso de Graduação em outra Instituição de Ensino Superior.
+
+# Ingresso com a nota do ENEM
+Os candidatos que tenham participado do Enem nos últimos cinco anos podem concorrer a uma vaga nas Unidades do Grupo Ser Educacional.
+
+Para ingressar por meio do Enem, o candidato deverá obter a média de 200 pontos (somatório de todas as notas dividido por 5 e não ter obtido nota zero em nenhuma das provas.
+
+Para se inscrever o candidato deverá anexar no seu cadastro o histórico do ENEM.
+
+# Ingresso como Portador de Diploma
+Se você já concluiu um curso de graduação regularmente reconhecido pelo Ministério da Educação (MEC), você pode ingressar num novo curso sem prestar um novo processo seletivo.
+
+Para se inscrever como portador de diploma o candidato deverá se inscrever no processo seletivo e apresentar o Diploma da Graduação realizada e o histórico das disciplinas cursadas.
+
+
+# Ingresso por Transferência de outra Instituição de Ensino Superior.
+Se você já é aluno de outra Instituição e deseja vir estudar conosco, poderá ingressar nas unidades do Grupo Ser Educacional por meio de Transferência.
+
+Para ingressar como transferido é necessário que se inscreva no processo seletivo e apresente o histórico das disciplinas cursadas que deve conter o registro da nota do vestibular realizado na outra Instituição ou outra forma de ingresso e a Portaria de autorização ou reconhecimento do curso, assim como a observação sobre a regularidade no ENADE.
+
+Obs: As formas de ingressos descritas não se aplicam ao curso de Medicina que possui vestibular próprio e edital com regras específicas de seleção. A inscrição em qualquer processo seletivo não garante aprovação automática, os documentos serão devidamente analisados e a aprovação está sujeita a disponibilidade de vagas.
+
+-----------------------------------------------------------------------------------------
+
+## NOS CURSOS TÉCNICOS
+O ingresso nos Cursos técnicos é realizado mediante inscrção do candidato e apresentação do Certificado de Conclusão de Ensino médio ou para os candidatos que ainda não concluíram o ensino médio a declaração de vínculo em Instituição regularmente autorizada pela Secretaria Estadual de Educação.
+
+------------------------------------------------------------------------------------------
+
+## NOS CURSOS DE PÓS-GRADUAÇÃO LATO SENSU
+O Ingresso nos cursos de Pós-Graduação lato sensu só pode ser realizado por candidatos que finalizaram o curso de graduação. No ato da inscrição o candidato deve apresentar o diploma de graduação ou declaração de conclusão emitida nos últimos 6 meses.
+
+------------------------------------------------------------------------------------------
+
