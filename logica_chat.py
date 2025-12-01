@@ -38,7 +38,7 @@ Se a pergunta não estiver relacionada à Uninassau João Pessoa, responda:
 """
 
     resposta = client.responses.create(
-        model="gpt-4o-mini",
+        model="gpt-3.5-turbo",
         input=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": pergunta}
