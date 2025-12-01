@@ -6,13 +6,14 @@ st.set_page_config(page_title="ASSISTENTE VIRTUAL CRA UNINASSAU", layout="center
 avatar_uninassau = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu-WxeGPMERFd0TGfOBYXt5RtHi4nbT4F_bw&s"
 avatar_user = "https://cdn-icons-png.flaticon.com/512/7236/7236095.png"
 
+# Controle de sessão
 if "logado" not in st.session_state:
     st.session_state["logado"] = False
     st.session_state["usuario"] = None
 if "messages" not in st.session_state:
     st.session_state["messages"] = []
 
-# Tela inicial
+# Tela inicial (LOGO + TÍTULO)
 col1, col2, col3 = st.columns([1, 3, 1])
 with col2:
     st.image("imagens/uninassaulogo.svg", width=300)
@@ -20,7 +21,7 @@ with col2:
 st.markdown("<h2 style='text-align: center;'>ASSISTENTE VIRTUAL CRA - João Pessoa</h2>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: center;'>Informe seus dados para iniciar a conversa.</h3>", unsafe_allow_html=True)
 
-# Formulário de cadastro
+# Tela de cadastro
 if not st.session_state["logado"]:
     with st.form("form_cadastro", clear_on_submit=False):
         nome = st.text_input("Nome completo")
@@ -29,10 +30,10 @@ if not st.session_state["logado"]:
         email = st.text_input("E-mail")
 
         if st.form_submit_button("Iniciar conversa"):
-            # Validação básica
+
+            # Validações
             if not nome or not email:
                 st.error("Por favor, preencha Nome e E-mail.")
-            # Validação específica: matrícula obrigatória para alunos e professores
             elif tipo_usuario in ["aluno", "professor"] and not matricula:
                 st.error("Por favor, preencha a Matrícula para alunos e professores.")
             else:
@@ -47,24 +48,26 @@ if not st.session_state["logado"]:
 
 # Tela de chat
 if st.session_state["logado"]:
+
     st.title("Chat Iniciado!")
     st.write(f"Conectado(a) como: **{st.session_state['usuario']['nome']}**")
 
-    # Saudação inicial
+    # Saudação inicial somente 1 vez
     if "primeira_vez" not in st.session_state:
-        st.session_state.primeira_vez = True
+        st.session_state["primeira_vez"] = False
         saudacao = "Oi! Eu sou o assistente virtual da Uninassau João Pessoa. Como posso te ajudar?"
         st.session_state["messages"].append({"role": "assistant", "content": saudacao})
 
-    # Histórico de mensagens
+    # Histórico do chat
     for message in st.session_state["messages"]:
         avatar_role = avatar_uninassau if message["role"] == "assistant" else avatar_user
         with st.chat_message(message["role"], avatar=avatar_role):
             st.markdown(message["content"])
 
-    # Entrada do usuário
+    # Input do usuário
     if prompt := st.chat_input("Digite sua dúvida aqui..."):
         st.session_state["messages"].append({"role": "user", "content": prompt})
+
         with st.chat_message("user", avatar=avatar_user):
             st.markdown(prompt)
 
@@ -75,7 +78,7 @@ if st.session_state["logado"]:
 
         st.session_state["messages"].append({"role": "assistant", "content": resposta})
 
-# Botão sair
+# Botão de sair
 with st.sidebar:
     if st.button("Sair e Encerrar Sessão"):
         st.session_state.clear()
