@@ -1,11 +1,11 @@
 import os
-from groq import Groq
+from openai import OpenAI
 from dotenv import load_dotenv
 
 load_dotenv()
 
-# Inicializa cliente Groq
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+# Cliente OpenAI
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # Carrega informações da Uninassau
 def carregar_md(caminho_arquivo="uninassau_infos.md"):
@@ -17,10 +17,10 @@ def carregar_md(caminho_arquivo="uninassau_infos.md"):
 
 conteudo_md = carregar_md()
 
-# Palavras de saudação
+# Saudações
 saudacoes = ["oi", "olá", "ola", "bom dia", "boa tarde", "boa noite", "hey", "e ai"]
 
-# Função principal para responder
+# Função principal de resposta
 def responder(pergunta):
     pergunta_lower = pergunta.lower().strip()
 
@@ -31,24 +31,18 @@ def responder(pergunta):
 Você é um assistente especializado em informações sobre a Uninassau João Pessoa.
 Responda **apenas sobre a pergunta do usuário**, usando as informações abaixo como referência.
 
-Se a pergunta do usuário envolver estágio, pergunte primeiro:
-1. Se ele é PF ou PJ
-2. Se o estágio é Obrigatório ou Não Obrigatório
-
-Depois que o usuário responder, entregue apenas a informação correspondente.
-
 {conteudo_md}
 
 Se a pergunta não estiver relacionada à Uninassau João Pessoa, responda:
 'Desculpe, só posso responder sobre a Uninassau João Pessoa!'
 """
 
-    resposta = client.chat.completions.create(
-        model="llama-3.1-8b-instant",
-        messages=[
+    resposta = client.responses.create(
+        model="gpt-4o-mini",
+        input=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": pergunta}
         ]
     )
 
-    return resposta.choices[0].message["content"]
+    return resposta.output_text
