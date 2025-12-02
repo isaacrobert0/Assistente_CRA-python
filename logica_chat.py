@@ -1,10 +1,11 @@
 import os
-from openai import OpenAI
+from groq import Groq
 from dotenv import load_dotenv
 
 load_dotenv()
-# Cliente OpenAI
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+# Cliente Groq
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 # Carrega informações da Uninassau
 def carregar_md(caminho_arquivo="uninassau_infos.md"):
@@ -36,12 +37,12 @@ Se a pergunta não estiver relacionada à Uninassau João Pessoa, responda:
 'Desculpe, só posso responder sobre a Uninassau João Pessoa!'
 """
 
-    resposta = client.responses.create(
-        model="gpt-4o-mini",
-        input=[
+    resposta = client.chat.completions.create(
+        model="llama-3.1-8b-instant",
+        messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": pergunta}
         ]
     )
 
-    return resposta.output_text
+    return resposta.choices[0].message["content"]
