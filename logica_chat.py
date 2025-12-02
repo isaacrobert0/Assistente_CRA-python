@@ -45,4 +45,4 @@ Se a pergunta não estiver relacionada à Uninassau João Pessoa, responda:
         ]
     )
 
-    return resposta.choices[0].message["content"]
+    return resposta.choices[0].message.content
