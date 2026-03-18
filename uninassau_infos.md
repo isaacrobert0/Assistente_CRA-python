@@ -1,4 +1,4 @@
-# UNINASSAU João Pessoa -- INFOs
+# UNINASSAU João Pessoa -- INFOS
 
 ------------------------------------------------------------------------
 
@@ -30,7 +30,7 @@ sábado	08:00–12:00
 ## Função da Coordenação
 
 A coordenação é responsável por: 
--   Resolver problemas acadêmicos -
+-   Resolver problemas acadêmicos
 -   Assinar e liberar documentos - Atender solicitações de alunos 
 -   Resolver questões de notas, frequência, financeiro, turmas etc.
 
@@ -126,7 +126,7 @@ Pode incluir:
 
 ---------------------------------------------------------------------------
 
-## Problemas comuns para ser tratado com CRa presencial na hora da matricula ou rematricula
+## Problemas comuns para ser tratado com CRA presencial na hora da matricula ou rematricula
 
 -   Turma lotada,
 -   Horários divergendo,
